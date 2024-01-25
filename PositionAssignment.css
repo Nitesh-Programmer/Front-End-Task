@@ -1,0 +1,16 @@
+#container{
+    border: 1px solid black;
+    height: 630px;
+    padding: 20px;
+   
+}
+#header{
+    text-align: center;
+    background-color: lightgreen;
+}
+#innercontanier a{
+    display: inline;
+    text-align: center;
+    word-spacing: 90px;
+}
+

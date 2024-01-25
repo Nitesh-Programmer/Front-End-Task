@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hiddenDiv {
+            border: 1px solid black;
+            padding: 30px;
+            height: 250px;
+            width: 250px;
+            display: none;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="hiddenDiv">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, aperiam quas ad rerum excepturi minus quos
+            placeat sint, soluta dignissimos, harum possimus qui. Consequatur animi facilis voluptas doloremque nisi
+            quis?</p>
+    </div>
+    <button onclick="unHide()">click me</button>
+
+    <script>
+        function unHide() {
+            let hiddenDiv = document.getElementById("hiddenDiv");
+
+            if (hiddenDiv.style.display == "none") {
+                hiddenDiv.style.display = "block";
+            }
+            else {
+                hiddenDiv.style.display = "none";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

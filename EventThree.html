@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #trans {
+            background-color: gray;
+            opacity: 0.9;
+            position: absolute;
+            top: 0px;
+            width: 17.6%;
+            height: 1%;
+            left: 0px;
+            padding: 250px 450px;
+            display: none;
+        }
+
+        #trans button {
+            position: relative;
+            background-color: aquamarine;
+            width: 80px;
+            padding: 3px 20px 3px 9px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <label for="">Vlaue1:</label><input type="number" name="" id="num1"><br>
+    <label for="">Vlaue2:</label><input type="number" name="" id="num2"><br>
+
+    <button id="add">add</button><br>
+    <button id="sub">sub</button><br>
+    <button id="mul">mul</button><br>
+    <button id="div">division</button>
+
+
+    <div id="trans">
+        <h2>Calc Over :)</h2>
+        <button id="restart">Restart calculation </button>
+
+    </div>
+
+    <script>
+
+        let add = document.getElementById("add");
+        add.addEventListener("click", () => {
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+
+            let transDiv = document.getElementById("trans");
+            transDiv.style.display = "block";
+            let para = document.createElement("p");
+            transDiv.appendChild(para);
+            para.style.color = "white";
+            para.style.fontSize = "14px";
+            para.innerHTML = `this is your addition ${num1 + num2}`;
+
+        });
+        let sub = document.getElementById("sub");
+        sub.addEventListener("click", () => {
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            let transDiv = document.getElementById("trans");
+            transDiv.style.display = "block";
+            let para = document.createElement("p");
+            transDiv.appendChild(para);
+            para.style.color = "white";
+            para.style.fontSize = "14px";
+            para.innerHTML = `this is your subtraction ${num1 - num2}`;
+
+        });
+        let mul = document.getElementById("mul");
+        mul.addEventListener("click", () => {
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            let transDiv = document.getElementById("trans");
+            transDiv.style.display = "block";
+            let para = document.createElement("p");
+            transDiv.appendChild(para);
+            para.style.color = "white";
+            para.style.fontSize = "14px";
+            para.innerHTML = `this is your multiplication${num1 * num2}`;
+
+        });
+        let div = document.getElementById("div");
+        div.addEventListener("click", () => {
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            let transDiv = document.getElementById("trans");
+            transDiv.style.display = "block";
+            let para = document.createElement("p");
+            transDiv.appendChild(para);
+            para.style.color = "white";
+            para.style.fontSize = "14px";
+            para.innerHTML = `this is your division ${num1 / num2}`;
+
+        });
+
+
+        let restart = document.getElementById("restart");
+        restart.addEventListener("click", () => {
+
+            let inputField = document.getElementsByTagName("input");
+            inputField[0].value = "";
+            inputField[1].value = "";
+            let transDiv = document.getElementById("trans");
+            transDiv.style.display = "none";
+        })
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

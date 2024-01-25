@@ -1,0 +1,93 @@
+*{
+    font-family: sans-serif;
+}
+#container{
+    margin: 250px 50px 80px 80px;
+    text-align: center;
+    color: rgb(146,98,57);
+    line-height: 10px;
+}
+
+#container>h1{
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    
+}
+#container>p{
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#submit{
+    color: rgb(192,150,108);
+    border-radius: 10px;
+    border-color: rgb(192,150,108);
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: white;
+    margin-top: 20px;
+
+}
+#submit:hover{
+    background-color: rgb(146,98,57);
+    color: white;
+}
+#container+p{
+    margin-top: 240px;
+    background-color:  rgb(146,98,57);
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    width: 100%;
+    font-weight: 400;
+    margin-left: -10px;
+}
+#secondpara{
+    font-style: normal;
+    font-weight: 400;
+    color: #926239;
+    text-align: center;
+    font-size: 17px;
+    line-height: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#paracontaier div{
+    display: inline-block;
+    padding: 20px;
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 400;
+    font-style: normal;
+    width: 400px;
+    margin-bottom: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+#one{
+    background-color: #93643C;
+    color: #ffffff;
+    margin-left: -20px;
+    
+}
+#two{
+    color: #93643C;
+    
+}
+#three{
+    background-color: #93643C;
+    color: #ffffff;
+    margin-right: -20px;
+   
+}
+#paracontaier>div:last-child{
+   width: 433px;
+    
+}

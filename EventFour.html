@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Parking slot</h1>
+    <label for="">Customer Name</label><input type="text" name="" id="cName" placeholder="Enter your name" required
+        pattern="[A-z]"><br>
+    <p id="userName" style="display: none; color: red;">Customer Name should container A-z only</p><br>
+    <label for="">Bike No</label><input type="text" name="" id="bNumber" placeholder="Bike Number" required><br>
+    <p id="bikepara" style="display: none;color: red;">Bike Number should contain alpha-Numeric</p>
+    <label for="">Check In</label><input type="time" name="" id="inTime" required><br><br>
+    <label for="">Check Out</label><input type="time" name="" id="outTime" required><br><br>
+    <button id="submit">submit</button>
+
+
+    <table id="table">
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Customer Name</th>
+                <th>Bike No</th>
+                <th>Check In</th>
+                <th>Check Out</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        <tbody id="tbody">
+
+        </tbody>
+        </thead>
+
+    </table>
+    <script>
+        var number = 1;
+        let submit = document.getElementById("submit");
+        submit.addEventListener("click", () => {
+            let cname = document.getElementById("cName").value;
+            let regex = new RegExp('^[A-Z]+$', 'gi');
+
+
+            if ((!(regex.test(cname))) || cname == "") {
+                let cpara = document.getElementById("userName");
+                cpara.style.display = "block";
+                return false;
+            }
+
+            let bNumber = document.getElementById("bNumber").value;
+            // let reg1 = new RegExp('^[a-z 0-9]', 'gi')
+            // console.log((reg1.test(bNumber)) + " -->")
+            // console.log(!(reg1.test(bNumber)) + " --> number")
+            // if (!(reg1.test(bNumber))) {
+            //     let bpara = document.getElementById("bikepara");
+            //     bpara.style.display = "block";
+            //     return false;
+            // }
+            let inTime = document.getElementById("inTime").value;
+            let outTime = document.getElementById("outTime").value;
+
+            let table = document.getElementById("tbody");
+            let trow = document.createElement("tr");
+            table.appendChild(trow);
+
+            let inputField = document.getElementsByTagName("input");
+
+            for (i = 0; i < 7; i++) {
+                let tdata = document.createElement("td");
+                if (i == 0) {
+                    trow.appendChild(tdata);
+                    tdata.innerHTML = number++;
+                    inputField[i].value = "";
+
+                }
+                if (i == 1) {
+                    trow.appendChild(tdata);
+                    tdata.innerHTML = cname;
+                    inputField[i].value = "";
+                }
+                if (i == 2) {
+                    trow.appendChild(tdata);
+                    tdata.innerHTML = bNumber;
+                    inputField[i].value = "";
+                }
+                if (i == 3) {
+                    trow.appendChild(tdata);
+                    tdata.innerHTML = inTime;
+                    inputField[i].value = "";
+                }
+                if (i == 4) {
+                    trow.appendChild(tdata);
+                    tdata.innerHTML = outTime;
+                }
+                if (i == 5) {
+
+                    trow.appendChild(tdata);
+
+                    let update = document.createElement("button");
+                    tdata.appendChild(update);
+                    update.innerHTML = "update";
+
+
+
+                }
+                if (i == 6) {
+
+                    trow.appendChild(tdata);
+                    let dele = document.createElement("button");
+                    tdata.appendChild(dele);
+                    dele.setAttribute("id", `deleteRow${number - 1}`);
+                    dele.value = number - 1;
+                    dele.innerHTML = "delete";
+                    dele.onclick = function deleteRow() {
+                        console.log("hi")
+                    };
+
+                }
+
+            }
+
+
+        });
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+p{
+    line-height: 40px;
+    word-spacing: 20px;
+    color: blue;
+    font-size:  x-large;
+}
+#container{
+    border: 15px dashed black;
+    height: 90vh;
+}
+
+#container> h1::before
+{
+    color: red;
+    
+    content: "* * *";
+}
+#container >h1::after{
+    color: red;
+    
+    content: "* * *";
+}
+#container > h1{
+    text-align: center;
+    color: red;
+}
+#container
+{
+    background-image: url("../IMAGE/Nitesh\ Photo\ \(1\).jpg"),url("../IMAGE/Nitesh\ Photo\ \(1\).jpg"),url("../IMAGE/Nitesh\ Photo\ \(1\).jpg");
+    background-position: top left, center center, bottom right;
+    background-repeat: no-repeat;
+ 
+    
+    
+}

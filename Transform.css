@@ -1,0 +1,37 @@
+#navigation{
+    border: 1px solid black;
+    line-height: 72px;
+    word-spacing: 290px;
+    text-align: center;
+    background-color: aqua;
+}
+
+#container>p{
+    border: 1px solid black;
+    width: 450px;
+    display: inline-block;
+    transform: skew(25deg);
+    padding: 35px;
+    text-align: center;
+    margin-left: 130px;
+}
+#king{
+    height: 300px;
+    width: 450px;
+}
+#container>#para3{
+    margin-left: 450px;
+}
+#image>div{
+    display: inline-block;
+    width: 550px;
+    padding: 30px;
+}
+#img1{
+    width: 250px;
+    border: 1px solid black;
+}
+#img2{
+    width: 250px;
+    border: 1px solid black;
+}

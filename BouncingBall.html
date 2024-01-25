@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bouncer{
+            border: 1px solid black;
+            height: 100px;
+            width: 250px;
+            margin-top: 250px;
+            margin-left: 550px;
+            position: sticky;
+  
+
+        }
+        @keyframes ball {
+
+        from
+        {
+            transform: translateY(250px);
+        }
+        to
+        {
+    
+        transform: translateY(-100px);
+        }
+
+    }
+        #ball{
+            background-color: red;
+            border-radius: 50%;
+            border-style: solid;
+            border-color: black;
+            height: 100px;
+            width: 100px;
+            margin-top: 250px;
+            margin-left: 595px;
+         
+            animation-name: ball;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div id="ball"></div>
+    <div id="bouncer"></div>
+</body>
+</html>

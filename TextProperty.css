@@ -1,0 +1,36 @@
+nav
+{
+    border: 2px solid black;
+    border-top-style: none;
+    background-color: aqua;
+    text-align: center;
+    word-spacing: 175px;
+    line-height: 80px;
+    color: blue;
+}
+div>p:nth-child(2n+1)
+{
+    display:inline;
+}
+div
+{
+    border: 2px solid black;
+    height: 610px;
+}
+p{
+    word-spacing: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-indent: 2px;
+    line-height: 40px;
+}
+button
+{
+    margin-left: 50%;
+}
+button:hover
+{
+    width: 90px;
+    background-color: gray;
+    zoom: 1.2;
+}

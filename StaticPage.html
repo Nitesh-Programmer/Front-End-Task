@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+        let outerDivision = document.createElement("div");
+        document.body.append(outerDivision);
+        outerDivision.style.minHeight = "150px";
+        outerDivision.style.border = "solid 1px black";
+        outerDivision.style.padding = "25px";
+
+
+        let heading = document.createElement("h1");
+        outerDivision.appendChild(heading);
+        heading.innerHTML = "Today's News ";
+        heading.style.textAlign = "center";
+        heading.style.color = "orange";
+
+        let navBar = document.createElement("div");
+        outerDivision.appendChild(navBar);
+        navBar.style.backgroundColor = "black";
+        navBar.style.display = "flex";
+        navBar.style.gap = "50px";
+        navBar.style.width = "100%";
+        navBar.style.alignItems = "center";
+        navBar.style.justifyContent = "space-evenly";
+
+        let navItem1 = document.createElement("a");
+        navBar.appendChild(navItem1);
+        navItem1.innerHTML = "Home";
+        navItem1.href = "#";
+        navItem1.style.fontSize = "25px";
+        navItem1.style.color = "white";
+        navItem1.style.textDecoration = "none";
+        navItem1.style.marginLeft = "20px";
+
+
+        let navItem2 = document.createElement("a");
+        navBar.appendChild(navItem2);
+        navItem2.innerHTML = "AboutUs";
+        navItem2.href = "##";
+        navItem2.style.fontSize = "25px";
+        navItem2.style.color = "white";
+        navItem2.style.textDecoration = "none";
+
+        let navItem3 = document.createElement("a");
+        navBar.appendChild(navItem3);
+        navItem3.innerHTML = "contact";
+        navItem3.href = "###";
+        navItem3.style.fontSize = "25px";
+        navItem3.style.color = "white";
+        navItem3.style.textDecoration = "none";
+
+        let navItem4 = document.createElement("a");
+        navBar.appendChild(navItem4);
+        navItem4.innerHTML = "login";
+        navItem4.href = "####";
+        navItem4.style.fontSize = "25px";
+        navItem4.style.color = "white";
+        navItem4.style.textDecoration = "none";
+        // navItem4.style.height = "55px";
+
+        let navItem5 = document.createElement("a");
+        navBar.appendChild(navItem5);
+        navItem5.innerHTML = "SignUp";
+        navItem5.href = "#####";
+        navItem5.style.fontSize = "25px";
+        navItem5.style.color = "white";
+        navItem5.style.textDecoration = "none";
+
+        let links = document.getElementsByTagName("a");
+        // links.style:hover.color="red";
+
+        let mainContainer = document.createElement("div");
+        outerDivision.appendChild(mainContainer);
+        mainContainer.style.display = "flex";
+        mainContainer.style.gap = "10px";
+        mainContainer.style.marginTop = "20px";
+
+        let aside = document.createElement("aside");
+        mainContainer.appendChild(aside);
+        aside.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est aspernatur quia dolorum. Non eius omnis aut blanditiis beatae nihil corporis? Illo, animi magnam. A saepe harum eligendi molestiae vitae vel ad dolore, totam ratione veniam dignissimos aut aperiam at mollitia aspernatur quasi. Ipsam, vitae!";
+        aside.style.width = "1150px";
+        aside.style.border = "solid 2px red";
+        aside.style.padding = "10px";
+        aside.style.lineHeight = "30px";
+        aside.style.backgroundImage = "url(../IMAGE/BGImage.jpg)"
+
+        let mainContent = document.createElement("div");
+        mainContainer.appendChild(mainContent);
+
+        let imgVideo = document.createElement("div");
+        mainContent.appendChild(imgVideo);
+        imgVideo.style.display = "flex";
+        imgVideo.style.gap="60px";
+
+
+        let image = document.createElement("img");
+        imgVideo.appendChild(image);
+        image.src = "../IMAGE/BGImage.jpg";
+        image.style.width = "50%";
+        image.style.backgroundPosition = "position";
+
+        let video = document.createElement("video");
+        imgVideo.appendChild(video);
+        video.src = "./Very-Funny-Comedy-Status-Videos.mp4";
+        video.style.height="400px";
+        video.style.width="450px";
+        video.controls="autoplay";
+
+
+        let subHeading = document.createElement("h2");
+        mainContent.appendChild(subHeading);
+        subHeading.innerHTML = "Demo Content";
+
+        let content = document.createElement("article");
+        mainContent.appendChild(content);
+        content.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est aspernatur quia dolorum. Non eius omnis aut blanditiis beatae nihil corporis? Illo, animi magnam. A saepe harum eligendi molestiae vitae vel ad dolore, totam ratione veniam dignissimos aut aperiam at mollitia aspernatur quasi. Ipsam, vitae!Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est aspernatur quia dolorum. Non eius omnis aut blanditiis beatae nihil corporis? Illo, animi magnam. A saepe harum eligendi molestiae vitae vel ad dolore, totam ratione veniam dignissimos aut aperiam at mollitia aspernatur quasi. Ipsam, vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est aspernatur quia dolorum. Non eius omnis aut blanditiis beatae nihil corporis? Illo, animi magnam. A saepe harum eligendi molestiae vitae vel ad dolore, totam ratione veniam dignissimos aut aperiam at mollitia aspernatur quasi. Ipsam, vitae!";
+        content.style.lineHeight = "40px";
+        content.style.wordSpacing = "10px";
+
+        let footer = document.createElement("footer");
+        outerDivision.appendChild(footer);
+        footer.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est aspernatur quia dolorum. Non eius omnis aut blanditiis beatae nihil corporis? Illo, animi magnam. ";
+        footer.style.border = "1px solid black";
+        footer.style.padding = "30px";
+        footer.style.textAlign = "center";
+        footer.style.color = "white";
+        footer.style.backgroundColor = "black";
+        footer.style.position = "relative";
+        footer.style.bottom = "-25px";
+        footer.style.width = "99%";
+        footer.style.left = "-25px";
+        footer.style.fontSize = "larger";
+
+        console.log(document.all);
+        console.log(outerDivision);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outercontainer{
+            border: 1px solid black;
+            height: 350px;
+            width: 400px;
+            border-radius: 50%;
+            background-color: yellow;
+           
+        }
+        #lefteye{
+            height: 100px;
+            background-color: white;
+            width: 125px;
+            margin-left: 50px;
+            margin-top: 70px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        #righteye{
+            height: 100px;
+            background-color: white;
+            width: 125px;
+            display: inline-block;
+            margin-left: 50px;
+            margin-top: 50px;
+            border-radius: 50%;
+        }
+        #mouth{
+            height: 100px;
+            width: 150px;
+            background-color: white;
+            margin-top: 40px;
+            margin-left: 130px;
+            border-radius: 50%;
+        }
+        #image{
+            width: 120px;
+            height: 100px;
+            margin-left: 20px;
+            /* margin-top: 10px; */
+            border-radius: 50%;
+
+        }
+        #leyeback{
+            background-color:tomato;
+            height: 60px;
+            position: absolute;
+            width: 90px;
+            border-radius: 50%;
+            margin-top: 35px;
+            margin-left: 15px;
+        }
+        #reyeback{
+            background-color:tomato;
+            height: 60px;
+            position: absolute;
+            width: 90px;
+            border-radius: 50%;
+            margin-top: 35px;
+            margin-left: 15px;
+        }
+        #leyeball{
+            height: 40px;            
+            width: 50px;
+            background-color: black;
+            /* position: relative; */
+            border-radius: 50%;
+            margin-top: 12px;
+            margin-left: 4px;
+            animation-name: eyeball;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        #reyeball{
+            
+            height: 40px;            
+            width: 50px;
+            background-color: black;
+            /* position: relative; */
+            border-radius: 50%;
+            margin-top: 12px;
+            margin-left: 4px;
+             animation-name: eyeball;
+            animation-duration: 3s;
+            animation-iteration-count: infinite; 
+        
+        }
+        @keyframes eyeball {
+            from{
+                margin-left: 4px;
+            }
+            to{
+                margin-left: 40px;
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div id="outercontainer">
+        <div id="lefteye">
+            <div id="leyeback">
+                <div id="leyeball">
+
+                </div>
+            </div>
+        </div>    
+        <div id="righteye">
+        <div id="reyeback">
+            <div id="reyeball"></div>
+        </div>
+    </div>
+        <div id="mouth"> <img  id="image" src="../IMAGE/mouth.jfif" alt=""></div>
+    </div#>
+</body>
+</html>

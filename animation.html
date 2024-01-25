@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("../IMAGE/Pizza1.svg");
+            background-size: cover;
+            position: relative;
+        }
+        #container{
+            color: white;
+        }
+        @keyframes move {
+            from
+            {
+                transform: translateY(250px);
+            }
+            to
+            {                
+                transform: translateY(-100px);
+            }
+                    
+         }
+        button:focus ~ #content{
+            display: block;
+        
+                    
+        }
+        #content{
+            background-color: yellow;
+            height: 250px;
+            width: 450px;
+            margin-top: 100px;
+            margin-left: 450px;
+            border: 1px solid black;
+            animation-name: move;
+            animation-duration: 5s;
+            display: none;
+            position: absolute;
+            
+        }
+        #content >h3{
+
+            margin-top: -1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>heading</h1>
+        <button>Login</button>
+        <h3>click me to get effect</h3>
+        <div id="content">
+            <h3>wait for the content</h3>
+        </div>
+    </div>
+   
+
+    
+</body>
+</html>

@@ -1,0 +1,221 @@
+
+*{
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+#maincontainer{
+    background-color: #333333;
+    display: flex;
+    color: white;
+    gap: 60px;
+    height: 40px;
+    align-items: center;
+    /* position: relative; */
+    /* position: fixed; */
+    position: relative;
+}
+.menubar{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;   
+    font-size: 16px;
+    font-family: sans-serif;
+    
+}
+#maincontainer>a:first-child{
+    margin-left: 10px;
+}
+#image{
+    
+    background-size: contain;
+}
+#img{
+    margin-top: -160px;
+    width: 100%;
+}
+#image h1{
+    color: white;
+    margin-top: -560px;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 2px;
+}
+
+#image >h4{
+
+    color: white;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 65px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51px;
+}
+#image>p{
+    color: white;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 140px;
+
+}
+#empty{
+    position: relative;
+    margin-top: 330px;
+    
+}
+#music{
+    position: relative;   
+    background-color: #252529;
+    text-align: center;
+    color: white;
+    
+}
+#music>h2{
+    color: white;
+   
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 64px
+
+}
+
+#music>h4{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 51px;
+    margin-top: 30px;
+}
+#music>p
+{
+    margin-top: 60px;
+    font-size: 21px;
+    line-height: 33px;
+    font-weight: 400;
+    margin-left: 55px;
+    word-spacing: 5px;
+    text-align: center;
+
+}
+#button{
+    font-size: large;
+    margin-top: 20px;
+    background-color: rgb(185,4,21);
+    color: white;
+    padding: 10px;
+}
+
+#music article{
+    margin-top: 30px;
+}
+#phimg{
+    width: 85%;
+    height: 90%;
+}
+#part_three{
+    margin-top: 50px;
+    text-align: center;
+
+}
+#part_three h2{
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51px;
+}
+#part_three p{
+    margin-left: 50px;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 33px;
+    word-spacing: 5px;
+    margin-top: 30px;
+}
+#read{
+    background-color: #143F85;
+    color: white;
+    margin-top: 20px;
+    font-size: large;
+    padding: 10px;
+    display: block;
+    float: left;
+    margin-left: 670px;
+
+}
+
+#skyimg{
+    margin-top: 35px;
+    height: 522px;
+    width: 100%;
+}
+#sky h1{
+    
+    color: white;
+    margin-top: -20rem;
+    text-align: center;
+}
+#sky article{
+    color: white;
+    text-align: center;
+    font-size: 21px;
+    line-height: 33px;
+    font-weight: 400;
+    padding: 0px 5px ;
+    margin-top: 35px;
+    margin-left: 25px;
+    
+}
+
+#part_four{
+    display: flex;
+    margin-top: 170px;
+}
+#card>img{
+    height: 380px;
+    width: 468px;
+   transform: rotateY('95deg');
+   
+  
+
+}
+#card{
+    width: 40%;
+   margin-left: 120px;
+}
+#content{
+    width: 40%;
+    line-height: 26px;
+    
+}
+#content h1{
+    font-size: 24px;
+}
+#content article{
+    margin-top: 40px;
+    line-height: 26px;
+    font-size: 16px;
+}
+#footer{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    color: #DCFFFF;
+    background-color: black;
+    padding: 50px;
+}
+.innerfooter>h4{
+font-size: 19px;
+font-weight: 400;
+}
+#end{
+    background-color:#333333;
+    color: #fff;
+    height: 40px;
+    text-align: center;
+    padding-top: 15px;
+}
